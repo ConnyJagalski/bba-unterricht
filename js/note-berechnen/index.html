@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Conny Jagalski">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Notenrechner</title>
+</head>
+<body class="flex">
+    <h1>Notenrechner</h1>
+    <form id="form" class="flex">
+        <input type="number" id="wish" step="0.1" min="0" placeholder="gewünschte Note in Zahlen">
+        <input type="number" id="ap1" step="0.01" min="0" placeholder="Punktzahl AP1 (Pflichtfeld)" required>
+        <input type="number" id="ap2_1" step="0.01" min="0" placeholder="Punktzahl AP2.1">
+        <input type="number" id="ap2_2" step="0.01" min="0" placeholder="Punktzahl AP2.2">
+        <input type="number" id="wiso" step="0.01" min="0" placeholder="Punktzahl WiSo">
+        <button type="submit" id="submit">Berechnen</button>
+    </form>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Aktuelle Gesamtpunktzahl:  </td>
+                <td id="res-gesamt">|</td>
+            </tr>
+            <tr>
+                <td>Punkte bis zum Bestehen:  </td>
+                <td id="res-bestehen">|</td>
+            </tr>
+            <tr>
+                <td>Punkte bis zur Wunschnote:  </td>
+                <td id="res-wunsch">|</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>Anleitung</h3>
+    <p>Gib die erreichte Punktzahl pro Prüfung ein. Wenn du nur die AP1-Punktzahl hast, ist auch dies ausreichend. Klicke auf "Berechnen". Dir wird nun angezeigt wie viele Punkte du noch mindestens brauchst, um zu bestehen.</p>
+    <p>Du kannst auch berechnen wie viele Punkte du noch mindestens für deine Wunschnote brauchst.</p>
+
+</body>
+</html>
