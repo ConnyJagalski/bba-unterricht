@@ -1,4 +1,4 @@
-import { aufgabe} from './primzahl.js';
+import { aufgabe} from './dezimal-in-binaer.js';
 
 const input = document.getElementById("input");
 const send = document.getElementById("send");
