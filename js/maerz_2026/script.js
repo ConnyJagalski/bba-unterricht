@@ -1,4 +1,4 @@
-import { aufgabe} from './dezimal-in-binaer.js';
+import { aufgabe} from './randomHashLength.js';
 
 const input = document.getElementById("input");
 const send = document.getElementById("send");
@@ -7,7 +7,7 @@ const form = document.getElementById("form");
 const headingBig = document.getElementById("groß");
 const headingSmall = document.getElementById("klein");
 
-headingBig.innerText = "Gib eine Zahl ein.";
+headingBig.innerText = "Deine Eingabe:";
 headingSmall.innerText = "";
 
 form.addEventListener('submit', (event) => {
